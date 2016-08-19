@@ -19,6 +19,12 @@
 
   "engines": {
     "node": ">=0.10.21"
+  },
+
+  "scripts": {
+    "postinstall": "bower install",
+    "dev": "grunt dev",
+    "dist": "grunt dist"
   }
 
 }
