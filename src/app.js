@@ -3,15 +3,9 @@
 
   /* @ngInject */
   function configureSlides(slidesConfig) {
-    slidesConfig.slides = [
-      'title',
-
-      'about-us',
-      'about-me',
-      'overview',
-
-      'end'
-    ];
+// @ifdef slides
+    /* @echo 'slidesConfig.slides = ' *//* @echo slides *//* @echo ';' */
+    // @endif
 
     slidesConfig.slideTemplatePrefix= '@@cacheBustingDir/slides/';
     slidesConfig.slideTemplateSuffix = '.html';
@@ -35,4 +29,11 @@
   });
 
   module.config (configureSlides);
+
+  module.controller('HtmlInjectCtrl', function ($scope, $sce) {
+    $scope.handleInsecureInput = function () {
+      $scope.trustedHtml = $sce.trustAsHtml($scope.searchTerm);
+    };
+  });
+
 }());
