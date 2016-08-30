@@ -1,29 +1,38 @@
 <div w11k-slide-master="regular">
-  <div w11k-slide-part-source="header">
-    Schwach und dynamisch typisiert
-  </div>
+    <div w11k-slide-part-source="header">
+        Schwach und dynamisch typisiert
+    </div>
 
-  <div w11k-slide-part-source="content">
-    <ul class="simple">
-     <li>Wann wird der Typ geprüft?
-        <ul>
-          <li><b>statische</b> Typisierung: <code>String s = new String();</code></li>
-          <li><b>dynamische</b> Typisierung: <code>var s = "a"; s = 3;</code></li>
+    <div w11k-slide-part-source="content">
+        <ul class="simple">
+            <li>Wann wird der Typ geprüft?
+                <ul>
+                    <li><b>statische</b> Typisierung: <code>String s = new String();</code>
+                    </li>
+                    <li><b>dynamische</b> Typisierung: <code>var s = "a"; s = 3;</code>
+                    </li>
+                </ul>
+            </li>
+            <li>Wie streng sind die Typen?
+                <ul>
+                    <li><b>schwache</b> Typisierung: <code>s = "Zahl " + 5;</code>
+                    </li>
+                    <li><b>starke</b> Typisierung: <code>s = "Zahl " + str(5)</code>
+                    </li>
+                </ul>
+            </li>
         </ul>
-      </li>
-      <li>Wie streng sind die Typen?
-        <ul>
-          <li><b>schwache</b> Typisierung: <code>s = "Zahl " + 5;</code></li>
-          <li><b>starke</b> Typisierung: <code>s = "Zahl " + str(5)</code></li>
-        </ul>
-      </li>      
-    </ul>
-    <ul class="simple">
-     <li>Fehler werden zum falschen Zeitpunkt gefunden</li>
-     <li>Zur Laufzeit</li>
-     <li>Abhilfe: Tests, Linter (sehr statisch, falsche Sicherheit)</li>
-     <li>Nervig: Zum Entwicklungszeitpunkt sind Datentypen nur über Code, oder Netzwerktab ersichtlich</li>
-  </ul>
+        <ul class="simple">
+            <li>Fehler werden zum falschen Zeitpunkt gefunden
+                <ul>
+                    <li>Zur Laufzeit</li>
+                    <li>Abhilfe: Tests, Linter (sehr statisch, falsche Sicherheit)</li>
+                    <li>Nervig: Zum Entwicklungszeitpunkt sind Datentypen nur über Code, oder Netzwerktab ersichtlich</li>
+                </ul>
+            </li>
 
-  </div>
+
+        </ul>
+
+    </div>
 </div>
